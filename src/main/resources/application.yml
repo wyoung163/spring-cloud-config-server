@@ -10,6 +10,6 @@ spring:
           uri: https://github.com/wyoung163/config-file.git
           search-paths: /**
           default-label: main
-          # https 사용 시 인증 수단 (저장소 주소를 ssh나 https로 설정하면 별도 인증 값을 더 적어야 함
+          # config-file이 private repository일 경우 필요
           username: ""
           password: ""
