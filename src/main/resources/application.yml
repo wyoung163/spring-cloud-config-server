@@ -11,6 +11,7 @@ spring:
           clone-on-start: true
           search-paths: /**
           default-label: main
+          # config-file이 private repository일 경우 필요
           username: ""
           password: ""
     kafka:
