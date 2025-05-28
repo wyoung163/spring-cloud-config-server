@@ -8,8 +8,18 @@ spring:
       server:
         git:
           uri: https://github.com/wyoung163/config-file.git
+          clone-on-start: true
           search-paths: /**
           default-label: main
-          # https 사용 시 인증 수단 (저장소 주소를 ssh나 https로 설정하면 별도 인증 값을 더 적어야 함
           username: ""
           password: ""
+    kafka:
+      bootstrap-severs: localhost:9092
+    bus:
+      enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
